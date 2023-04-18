@@ -38,6 +38,17 @@
  * - Show a satellite map of the weather in Brentwood.
  * - Request a user's phone number and send them an SMS with the weather.
  */
+
+/**
+ * Solution
+ *
+ * Chossen to separate the js file from the embaded html. Because it's improve the readability and help in error validation.
+ *
+ * Choose to use Tailwind css as external library/framework.
+ * Tailwind provide very elegant way of writing css.
+ * Tailwind is easy and free to use, Highly customizable and good for larger html file.
+ *
+ */
 class Test {
   constructor() {
     /**
@@ -196,7 +207,15 @@ class Test {
         this.setError(err.message, err.response);
       });
   }
+
+  /**
+   * method us to get the location based on the user input if applicable.
+   */
   showlocations() {
+    // can be used to fetch longitude and latitude information based on county, state and city.
+
+    // in the current scenario as suggested to get the weather report for Brentwood, TN. Therefore used it as static data.
+
     let ul = document.createElement("ul");
     ul.className = "list-none flex gap-2 mx-auto";
 
