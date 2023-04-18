@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+    <title>FreightWise Programming Test</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <style>
+      .button-container {
+        text-align: center;
+      }
+
+      .button-container > button {
+        margin: 0;
+        padding: 10px 18px;
+        color: white;
+        background-color: #008000;
+        border: none;
+        border-radius: 3px;
+        transition: all 200ms ease-in-out;
+        font-size: 14px;
+      }
+
+      .button-container > button:hover {
+        background-color: #00a000;
+      }
+
+      .button-container > button:active {
+        background-color: #006000;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="result mx-auto flex justify-center my-4">
+        <div id="test-result"></div>
+      </div>
+
+      <div class="action flex flex-col">
+        <div class="button-container mt-2"></div>
+        <div id="locations" class="mt-4 p-4"></div>
+      </div>
+    </div>
+
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="./app.js"></script>
+  </body>
+</html>
