@@ -215,7 +215,8 @@ class Test {
     // can be used to fetch longitude and latitude information based on county, state and city.
 
     // in the current scenario as suggested to get the weather report for Brentwood, TN. Therefore used it as static data.
-
+    const elem = document.getElementById("locations");
+    elem.innerHTML = "";
     let ul = document.createElement("ul");
     ul.className = "list-none flex gap-2 mx-auto";
 
@@ -234,7 +235,6 @@ class Test {
       ul.appendChild(li);
     });
 
-    const elem = document.getElementById("locations");
     elem.appendChild(ul);
   }
 }
